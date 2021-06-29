@@ -1,0 +1,10 @@
+### write below code on `functions.php` file
+
+```PHP
+function frhd_enqueue_stuff() {
+  if ( is_page( 'home' ) ) {
+    wp_enqueue_script( 'particles-js', 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js', array(), '2.0.0', false );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'frhd_enqueue_stuff' );
+```
