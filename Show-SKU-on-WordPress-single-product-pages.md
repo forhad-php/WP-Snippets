@@ -1,3 +1,4 @@
+```PHP
 /**
  * Show SKU on single product pages.
  */
@@ -6,3 +7,4 @@ function doggietoys_show_sku(){
     global $product;
     echo 'SKU: ' . $product->get_sku();
 }
+```
