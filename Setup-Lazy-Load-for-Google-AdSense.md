@@ -1,4 +1,4 @@
-## First we need to add below script at the bottom of the page. Possibly just before the body tag.
+## First we need to add below script at the bottom of the page. Possibly just before the `</body>` tag.
 
 > It's OK to use custom hook into Astra/Generatepress Theme at 'After Footer'.
 
