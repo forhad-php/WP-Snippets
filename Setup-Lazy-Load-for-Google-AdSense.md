@@ -24,12 +24,12 @@ else window.onload = downloadJSAtOnload;
 ```PHP
 function wpb_demo_shortcode() { 
 	
-	$message = '<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-8960012494049607" data-ad-slot="1644967317" data-ad-format="auto" data-full-width-responsive="true"></ins>
+	$frhd_gads = '<ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-8960012494049607" data-ad-slot="1644967317" data-ad-format="auto" data-full-width-responsive="true"></ins>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>';
 
-	return $message;
+	return $frhd_gads;
 }
 add_shortcode('googlead', 'wpb_demo_shortcode');
 ```
