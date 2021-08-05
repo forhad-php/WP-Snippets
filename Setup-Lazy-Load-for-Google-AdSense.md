@@ -36,3 +36,26 @@ add_shortcode('googlead', 'wpb_demo_shortcode');
 
 > Add this `[googlead]` shortcode where need to show ad.
 > `data-ad-client` and `data-ad-slot` values are unique for each users.
+
+
+## Another situation - Lazyload only script with `data-ad-client`
+
+```
+<script type='text/javascript'>
+var arpianLazyLoadAds = false; 
+window.addEventListener("scroll", function() { 
+if((document.documentElement.scrollTop != 0 && arpianLazyLoadAds === false) || 
+(document.body.scrollTop != 0 && arpianLazyLoadAds === false)) { 
+(function() { 
+var ad = document.createElement('script'); 
+ad.setAttribute('data-ad-client', 'ca-pub-xxxxxxxxxxx'); 
+ad.async = true; 
+ad.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js'; 
+var sc = document.getElementsByTagName('script')[0]; 
+sc.parentNode.insertBefore(ad, sc); 
+})(); 
+arpianLazyLoadAds = true; 
+} 
+}, true);
+</script>
+```
