@@ -40,7 +40,7 @@ add_shortcode('googlead', 'wpb_demo_shortcode');
 
 ## Another situation - Lazyload only script with `data-ad-client`
 
-```
+```JS
 <script type='text/javascript'>
 var arpianLazyLoadAds = false; 
 window.addEventListener("scroll", function() { 
