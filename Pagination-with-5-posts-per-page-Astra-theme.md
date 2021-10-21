@@ -1,11 +1,14 @@
 ```PHP
 /**
- * Location: \wp-content\themes\astra\inc\class-astra-loop.php
- * Position: Before While Loop
+ * Location: functions.php
  */
  
-if ( !is_front_page() && is_home() ) {
-  global $query_string;
-  query_posts ('posts_per_page=5');
+function frhd_blog_page_pagination( $query ) {
+	
+    if ( $query->is_home() && $query->is_main_query() ) {
+		
+        $query->set( 'posts_per_page', 5 );
+    }
 }
+add_action( 'pre_get_posts', 'frhd_blog_page_pagination' );
 ```
