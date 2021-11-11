@@ -19,4 +19,9 @@
 .entry-content figure {
     max-width: 100%;
 }
+
+/* On archive pages */
+.wp-post-image {
+    max-width: 100%;
+}
 ```
