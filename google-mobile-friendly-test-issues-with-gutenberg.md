@@ -11,7 +11,10 @@
     }
 }
 
-/* For Astra Blog Post Thumbnails */
+/**
+ * For Astra Blog Post Thumbnails.
+ * And also if related posts is displaying after the content on single page.
+ */
 .post-thumb-img-content.post-thumb img {
     max-width: 100%;
 }
