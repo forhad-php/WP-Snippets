@@ -23,13 +23,16 @@ for (var i = 0; i < elemBtn.length; i++) {
 
     elemBtn[i].addEventListener('click', function() {
 
-        var elemCom = this.parentNode.previousElementSibling.getElementsByClassName("complete");
+        var elemThis = this;
+        var elemCom = elemThis.parentNode.previousElementSibling.getElementsByClassName("complete");
         if ( elemCom[0].classList.contains("rs-dis-blo") ) {
 
             elemCom[0].classList.remove("rs-dis-blo");
+            elemThis.innerHTML = '<span class="more"><i class="fas fa-chevron-down"></i><br>Show More…</span>';
         } else {
 
             elemCom[0].classList.add("rs-dis-blo");
+            elemThis.innerHTML = '<span class="more"><i class="fas fa-chevron-down"></i><br>Show Less…</span>';
         }
     })
 }
