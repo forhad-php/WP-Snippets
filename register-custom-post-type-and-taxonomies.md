@@ -86,4 +86,17 @@ function frhd_create_custom_taxonomy() {
 		)
 	);
 }
+
+/**
+ * If a new post of custom post type says ↓
+ * Oops! That page can’t be found..
+ * Use this function once and then comment out again to deactivate.
+ *
+ * @return void
+ */
+// function frhd_custom_flush_rules() {
+
+// 	flush_rewrite_rules();
+// }
+// add_action( 'after_theme_switch', 'frhd_custom_flush_rules' );
 ```
