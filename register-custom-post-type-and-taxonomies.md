@@ -82,7 +82,7 @@ function frhd_create_custom_taxonomy() {
 			'show_ui'           => true,
 			'show_admin_column' => true,
 			'query_var'         => true,
-			'rewrite'           => array( 'slug' => 'developers' ),
+			'rewrite'           => array( 'slug' => 'developers' ), // To change taxonomy permalink 👉 array( 'slug' => 'app/developers' )
 		)
 	);
 }
